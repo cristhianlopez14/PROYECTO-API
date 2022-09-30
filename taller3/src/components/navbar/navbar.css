@@ -1,0 +1,173 @@
+@import
+url('https://fonts.googleapis.com/css2? family= Marcellus &familia= Playfair+Pantalla &familia= Roboto:peso@100 & display=swap');
+:root{
+ --azulclaro: #48D6ED;
+ --azuloscuro: #337AB7;
+ --azulnegro: #303342;
+ --negro: #333333;
+ --negro2: #000;
+ --gris: #B2B3B3;
+ --fondo: #FFFEFC;
+ --verdeazul: #157A8A;
+ --Magenta: #9C2759;
+ --blanco: #fff;
+ --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+ --blanconegro: linear-gradient(rgba(0, 0, 0, 0.842) 40%, white 0%);
+ --negroblanco: linear-gradient(white 30%, rgba(72, 72, 252, 0.582) 0%);
+
+}
+*{ 
+ margin:0;
+}
+
+body{
+  font-family: 'Roboto' , sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: 'Marcellus', serif;
+}
+@media screen and (min-width:320px) and (max-width:1024px) {
+
+
+nav{
+    display: grid;
+    grid-template-columns: auto ;
+    width: 100%;
+    overflow: hidden;
+}
+.logo{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: var(--negro2);
+    padding: 10px;
+    column-gap: 15px;
+    justify-content: space-between;
+    padding: 1.5rem;
+        
+}
+    
+.logo i{
+    color: var(--blanco);
+    font-size: 3em;
+    align-self: center;
+}
+
+.logo img{
+width: 150px;
+max-width: 500px;
+}
+.menu{
+    display: none;
+}
+
+.menuopen{
+    display: grid;
+    background-color:rgba(1, 10, 52, 0.838);
+    width: 100%;
+    text-align: center;
+}
+
+nav .menu-hr{
+  width: 90%;
+  margin: auto;
+  background-color: var(--blanco);
+} 
+
+.item{
+  padding: 1rem;
+  width: 100%;
+  
+  }
+nav a{
+  color: var(--blanco);
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+}
+
+nav a:hover{
+  background-color: #0B3860;
+  width: 100%;
+}
+.navbar-button{
+  background-color:transparent;
+  border: none;
+  border-radius: 3px;
+  font-size: 1em;
+  padding: 0.5rem;
+  font-family: 'Marcellus', serif;
+  color: var(--blanco);
+  width: 100%;
+}
+
+.button-menu{
+    border: none;
+    background: none;
+}
+
+.button-menu.close :nth-child(3){
+    display: none;
+}
+
+}
+
+@media screen and (min-width: 1024px){
+    nav{
+        display: grid;
+        grid-template-columns: 40% auto;
+        background-color: var(--negro2);
+    }
+
+    .logo{
+        margin: 1rem 2rem;
+    }
+
+    .menu{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .menu.show{
+        margin-left: 0;
+    }
+    .button-menu{
+        display: none;
+    }
+    .menu a{
+        font-size: 1.5em;
+        text-decoration: none;
+        color: var(--blanco);
+        align-self: center;
+    }
+    .logo img{
+        width: 35%;
+    }
+
+    .logo i{
+        display: none;
+    }
+
+    .menu-hr{
+        display: none;
+    }
+    .navbar-button{
+        background-color: var(--azuloscuro);
+        padding: 0.3rem;
+        border-radius: 5px;
+        font-size: 1em;
+        color: var(--blanco);
+    }
+
+    .item{
+        text-align: center;
+    }
+
+    .item:hover{
+        background-color: rgba(0, 0, 255, 0.534);
+        padding: 0.1rem;
+        border-radius: 5px;
+    }
+
+}

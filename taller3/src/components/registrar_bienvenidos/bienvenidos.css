@@ -1,0 +1,111 @@
+@import
+url('https://fonts.googleapis.com/css2? family= Marcellus &familia= Playfair+Pantalla &familia= Roboto:peso@100 & display=swap');
+:root{
+ --azulclaro: #48D6ED;
+ --azuloscuro: #337AB7;
+ --azulnegro: #303342;
+ --negro: #333333; 
+ --negro2: #000;
+ --gris: #B2B3B3;
+ --fondo: #FFFEFC;
+ --verdeazul: #157A8A;
+ --Magenta: #9C2759;
+ --blanco: #fff;
+ --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+ --blanconegro: linear-gradient(rgba(0, 0, 0, 0.842) 40%, white 0%);
+ --negroblanco: linear-gradient(white 30%, rgba(72, 72, 252, 0.582) 0%);
+
+}
+*{
+ margin:0;
+}
+
+body{
+  font-family: 'Roboto' , sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: 'Marcellus', serif;
+}
+
+@media screen and (min-width:320px) and (max-width:1024px){
+
+#bienvenido-registrar{
+  display: grid;
+  grid-template-columns: 100%;
+  height: 90%;
+  background: var(--degradado);
+  color: var(--blanco);
+  margin-top: 1rem;
+  width: 100%;
+}
+#bienvenido-registrar h2{
+  font-size: 2em;
+  text-align: center;
+}
+
+#bienvenido-registrar img{
+  width: 25%;
+  height: auto;
+  padding-top: 0.5rem;
+}
+.hotelia{
+  display: none;
+}
+}
+
+@media screen and (min-width: 1024px){
+
+  .caja-registrar{
+    display: flex;
+    background-image: url(./bogota.png.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  #caja-registrar{
+    display: grid;
+    grid-template-columns: 30% auto;
+  }
+  
+  #bienvenido-registrar{
+    display: flex;
+    background: var(--degradado);
+    color: var(--blanco);
+    background-size: 100%;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    min-height: auto;
+    max-height: 1750px;
+  }
+  
+  #bienvenido-registrar .hotelia2{
+    display: none;
+  }
+  
+  #bienvenido-registrar img{
+    display: flex;
+    align-items: center;
+  
+    padding: 1rem;
+    margin-top: 9rem;
+  }
+  
+  #bienvenido-registrar h2{
+    display: flex;
+    padding: 2rem;
+    font-size: 2em;
+    text-align: center;
+  }
+  
+  #formulario-registrar{
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(255, 255, 255, 0.616);
+    margin: 3rem 3rem;
+    border-radius: 3px;
+    width: auto;
+  }
+}

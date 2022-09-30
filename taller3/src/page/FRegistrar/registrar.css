@@ -1,0 +1,33 @@
+@media screen and (min-width:320px) and (max-width:1024px){
+    .caja-registrar{
+      background-image: url(../../components/registrar_bienvenidos/bogota.png.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100%;
+    }
+
+    #caja-registrar{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 20% 100% ;
+    }
+
+    }
+    
+    @media screen and (min-width: 1024px){
+
+    .caja-registrar{
+      display: flex;
+      background-image: url(../../components/registrar_bienvenidos/bogota.png.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+    
+    #caja-registrar{
+      display: grid;
+      grid-template-columns: 30% auto;
+    }
+
+    }
+    

@@ -1,0 +1,227 @@
+@import
+url('https://fonts.googleapis.com/css2? family= Marcellus &familia= Playfair+Pantalla &familia= Roboto:peso@100 & display=swap');
+:root{
+ --azulclaro: #48D6ED;
+ --azuloscuro: #337AB7;
+ --azulnegro: #303342;
+ --negro: #333333;
+ --negro2: #000;
+ --gris: #B2B3B3;
+ --fondo: #FFFEFC;
+ --verdeazul: #157A8A;
+ --Magenta: #9C2759;
+ --blanco: #fff;
+ --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+ --blanconegro: linear-gradient(rgba(0, 0, 0, 0.842) 40%, white 0%);
+ --negroblanco: linear-gradient(white 30%, rgba(72, 72, 252, 0.582) 0%);
+
+}
+*{
+ margin:0;
+}
+
+body{
+  font-family: 'Roboto' , sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: 'Marcellus', serif;
+}
+
+@media screen and (min-width:320px) and (max-width:1024px){
+
+	#formulario-registrar{
+  display: grid;
+  grid-template-columns: 100%;
+  align-self: center;
+  justify-self: center;
+  background-color: #b2b3b3c9;
+  margin: 1rem;
+  padding: 1rem
+}
+
+.title-registro{
+  text-align: center;
+  font-size: 2em;
+  padding: 1.5rem;
+}
+
+.campo1{
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+
+.submit{
+  display: flex;
+  margin-left: 25%;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+.Ingresar{
+background-color: var(--negro2);
+color: var(--blanco);
+width:50%;
+height: 30px;
+font-size: 1.2em;
+}
+}
+
+@media screen and (min-width: 1024px){
+#formulario-registrar{
+  display: flex;
+  flex-direction: column;
+  background-color:rgba(255, 255, 255, 0.616);
+  margin: 3rem 3rem;
+  border-radius: 3px;
+  width: auto;
+}
+
+.title-registro{
+  text-align: center;
+  font-size: 3em;
+  padding: 1.5rem;
+}
+
+.campos-formu{
+  display: flex;
+  flex-direction:column;
+  padding: 0rem;
+  width: 100%;
+}
+
+.bienvendio-registrar{
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+  align-items: flex-start;
+  width: 100px;
+}
+
+.campo1-2{
+  display: flex;
+  flex-direction: row;
+  margin-left: 15%;
+  padding-right: 250px;
+
+}
+
+.campo1-2 input{
+  width: 250px;
+}
+
+.campo1-2 select{
+  width: 260px;
+}
+
+
+
+.campo1{
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.campo-genero{
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  margin: 0%;
+}
+
+.campo-genero input{
+  width: 10px;
+  height: 10px;
+  align-items: center;
+  align-content: center;
+}
+.check{
+  border-radius: 15px;
+  border: 1px solid blue;
+  padding: 0em;
+  justify-content: center;
+  margin: auto;
+}
+
+.campo-genero h1{
+  margin: 0.2rem;
+  font-size: 1.1em;
+}
+
+.terminos{
+  align-items: flex-start;
+  flex-direction: row;
+  align-content: center;
+  padding: 1rem;
+}
+
+.TerCon{
+ margin-left: 33%;
+}
+
+.submit{
+  display: flex;
+  margin-left: 37%;
+  padding-bottom: 2rem;
+}
+.Ingresar{
+background-color: var(--negro2);
+color: var(--blanco);
+width: 200px;
+height: 30px;
+font-size: 1.2em;
+}
+}
+
+.contenido-modal{
+    background-color:var(--blanco);
+    width:400px;
+    margin: 20% auto;
+    position: relative;
+    height: 53%;
+  }
+  
+  .title-modal{
+    background: var(--degradado);
+    width: 100%;
+    margin: 0;
+    color: var(--blanco);
+    height: 50px;
+    padding-top: 0.5rem;
+    text-align: center;
+  }
+  
+  .p-modal{
+    text-align: justify;
+    margin: 1rem;
+  }
+  
+  .button{
+    display: flex;
+    background-color: var(--negro2);
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 0.5rem;
+    text-align: center;
+    align-items: center;
+    width: 15%;
+    margin-left: 40%;
+  }
+  
+  .modal{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+  }
+  
+  #Terminos:target{
+    opacity:1;
+    pointer-events:auto;
+  }

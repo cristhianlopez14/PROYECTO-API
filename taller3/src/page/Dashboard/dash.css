@@ -1,0 +1,422 @@
+@import
+url('https://fonts.googleapis.com/css2? family= Marcellus &familia= Playfair+Pantalla &familia= Roboto:peso@100 & display=swap');
+:root{
+ --azulclaro: #48D6ED;
+ --azuloscuro: #337AB7;
+ --azulnegro: #303342;
+ --negro: #333333;
+ --negro2: #000;
+ --gris: #B2B3B3;
+ --fondo: #FFFEFC;
+ --verdeazul: #157A8A;
+ --Magenta: #9C2759;
+ --blanco: #fff;
+ --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+ --blanconegro: linear-gradient(rgba(0, 0, 0, 0.842) 40%, white 0%);
+ --negroblanco: linear-gradient(white 30%, rgba(72, 72, 252, 0.582) 0%);
+
+}
+*{
+ margin:0;
+}
+
+body{
+  font-family: 'Roboto' , sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: 'Marcellus', serif;
+}
+
+@media screen and (min-width:320px) and (max-width:1024px) {
+.cajas-dashboard{
+    display: grid;
+    grid-template-columns: 16% auto;
+    background-image: url(./fondo-phone-dash.jpg);
+  }
+
+  .caja-1{
+    display: grid;
+    background-color: rgba(47, 51, 66);
+    grid-template-rows: 25% 18% auto;
+  }
+
+  .image-dashboard{
+    display: none;
+  }
+
+  .image2-dashboard{
+    display: grid;
+    width: 100%;
+    height:70%;
+    background-color:rgba(9, 45, 75);
+    align-items: center;
+    justify-items: center;
+  }
+
+  .img2-dashboard{
+    border-radius: 5px;
+  }
+
+  .image2-dashboard img{
+    width: 70%;
+  }
+
+  .nombre-correo{
+    display: none;
+
+  }
+  .cerrarsesion h2{
+    display: none;
+  }
+
+  .sesion-dash{
+    display: grid;
+    margin-top: 23rem;
+    justify-items: center;
+    font-size: 2.5em;
+    color: var(--blanco);
+  }
+
+  .text-dashboard{
+    display: none;
+  }
+
+  .habitaciones-dashboard{
+    display: grid;
+    justify-items: center;
+    align-items: flex-start;
+    font-size: 2.5em;
+    color: var(--blanco);
+  }
+  .icon-blue{
+    display: grid;
+    background-color: #157A8A;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .caja-2{
+    background-color:  rgba(229, 229, 229, 0.74);
+    margin: 1rem;
+    border-radius: 5px;
+  }
+
+  .info-usuario{
+    display: grid;
+    margin: 1rem;
+    border-radius: 15px;
+  }
+
+  .datos-dash{
+    display: grid;
+    grid-template-rows: auto;
+  }
+
+  .title-dash{
+    justify-self: center;
+    padding-top: 1rem;
+    font-size: 2em;
+  }
+
+  .col1-dash{
+    display: grid;
+    width: 100%;
+    grid-template-rows: 80% auto;
+    grid-row: 0px;
+  }
+
+  .col1-dash img{ 
+    width: 50%;
+    height: 90%;
+    background-color: #303342;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .two-icons {
+    display: flex;
+    background-color: rgba(51, 122, 183);
+    width: 50%;
+    flex-direction: row;
+    justify-self: center;
+    color: var(--blanco);
+  }
+
+  .icon1-2 {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: auto;
+    font-size: 2.5em;
+    width: 100%;
+    
+  }
+
+  .icon2-2{
+    display: none;
+  }
+
+  .items-dashboard{
+    display: grid;
+    padding-top: 1rem;
+    grid-template-columns: repeat(13 / auto);
+  }
+
+  .campoin-dash{
+    width: 100%;
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0px 1px 0px 0px #888888bb;
+    margin-top: 0.5rem;
+  }
+
+  .botones-dash{
+    background-color: rgba(34, 34, 34);
+    color: var(--blanco);
+    font-size: 1.5em;
+    width: 60%;
+    height: auto;
+    border-radius: 5px;
+    border: 0;
+    margin-top: 1rem;
+  }
+
+  .formu-dash {
+    padding-top: 0.5rem;
+  }
+ 
+  .campoin-das{
+    border-radius: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .items-dashboard1{
+    display: none;
+  }
+
+  .cambiar-password-dash{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px){
+.cajas-dashboard{
+    display: grid;
+    grid-template-columns: 16% auto;
+    background-image: url(./dashboard-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .caja-1{
+    display: grid;
+    background-color: rgba(47, 51, 66);
+    grid-template-rows: 20% auto auto;
+  }
+
+  .image2-dashboard{
+    display: none;
+  }
+
+  .image-dashboard{
+    display: grid;
+    width: 100%;
+    height:auto;
+    background-color:rgba(9, 45, 75);
+    align-items: center;
+    justify-items: center;
+  }
+
+  .image-dashboard img{
+    width: 70%;
+  }
+
+  .nombre-correo{
+    display: grid;
+    width: 100%;
+    font-size:0.7em;
+    color: var(--blanco);
+    justify-items: flex-start;
+    padding-left: 70%;
+  }
+
+  .correo-dashboard{
+    font-size: 1em;
+  }
+  .cerrarsesion{
+    display: flex;
+    color: var(--blanco);
+    flex-direction: row;
+    background-color: #333333;
+  }
+  .sesion-dash{
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+    margin: 1rem;
+    padding-left: 1rem;
+    align-self: flex-end;
+    text-decoration: none;
+    color: var(--blanco);
+    background-color: rgba(59, 62, 79);
+  }
+
+  .icon-dashboard{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.5em;
+    margin: 1rem;
+    align-self: flex-start;
+  }
+
+  .text-dashboard{
+    display: flex;
+    font-size: 1em;
+    margin-left: 1rem;
+    align-self: flex-end;
+    text-decoration: none;
+    color: var(--blanco);
+  }
+  .text-dashboard1{
+    display: flex;
+    font-size: 1.5em;
+    margin-left: 1rem;
+    align-self: flex-end;
+    text-decoration: none;
+    color: var(--blanco);
+  }
+
+  .habitaciones-dashboard{
+    display: flex;
+    font-size: 2.5em;
+    color: var(--blanco);
+    flex-direction: column;
+  }
+  .icon-blue{
+    display: grid;
+    background-color: #157A8A;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .caja-2{
+    background-color:  rgba(229, 229, 229, 0.74);
+    margin: 1rem;
+    border-radius: 5px;
+  }
+
+  .info-usuario{
+    display: grid;
+    margin: 1rem;
+    border-radius: 15px;
+  }
+
+  .datos-dash{
+    display: grid;
+    grid-template-columns: 20% auto;
+  }
+
+  .title-dash{
+    justify-self: center;
+    padding-top: 1rem;
+    font-size: 2.5em;
+  }
+
+  .col1-dash{
+    display: grid;
+    width: 100%;
+    grid-template-rows: 42% 20% 20%;
+    grid-row: 0px;
+  }
+
+  .col1-dash img{ 
+    width: 70%;
+    justify-self: center;
+  }
+
+  .two-icons {
+    display: flex;
+    background-color: rgba(51, 122, 183);
+    width: 70%;
+    height: 70%;
+    flex-direction: row;
+    justify-self: center;
+    color: var(--blanco);
+  }
+
+  .icon1-2,.icon2-2 {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: auto;
+    font-size: 2.5em;
+    width: 100%;
+    
+  }
+
+  .cambiar-password-dash{
+    display: grid;
+    background-color: rgba(51, 51, 51);
+    width: 70%;
+    height: 100%;
+    border-radius: 5px;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    color: var(--blanco);
+    text-align: center;
+  }
+
+  .items-dashboard{
+    display: none;
+  }
+  .items-dashboard1{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .campoin-dash{
+    width: 100%;
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0px 1px 0px 0px #888888bb;
+    margin-top: 0.5rem;
+  }
+
+  .botones-dash{
+    background-color: rgba(34, 34, 34);
+    color: var(--blanco);
+    font-size: 1.5em;
+    width: 60%;
+    height: auto;
+    border-radius: 5px;
+    border: 0;
+    margin-top: 1rem;
+  }
+
+ 
+  .campoin-das{
+    border-radius: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .col22{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    width: 90%;
+  }
+  .campos-dash1{
+    margin-top: 7.7rem;
+  }
+
+  .col1{
+    font-size: 1.4em;
+  }
+}

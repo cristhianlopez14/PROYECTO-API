@@ -1,0 +1,45 @@
+@media screen and (min-width:320px) and (max-width:1024px) {
+    #slide1{
+        display: grid;
+        background-image: url(./slide1.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 500px;
+    }
+    
+    .slide1{
+        text-align: start;
+        width: 80%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.39);
+        color: var(--blanco);
+        font-size: 2.5em;
+        align-self: end;
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    #slide1{
+        display: grid;
+        background-image: url(./slide1.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 500px;
+    }
+
+    .slide1{
+        text-align: start;
+        width: 70%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.39);
+        color: var(--blanco);
+        font-size: 2.5em;
+        align-self: end;
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+}

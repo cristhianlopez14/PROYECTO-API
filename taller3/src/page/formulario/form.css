@@ -1,0 +1,234 @@
+@import
+url('https://fonts.googleapis.com/css2? family= Marcellus &familia= Playfair+Pantalla &familia= Roboto:peso@100 & display=swap');
+:root{
+ --azulclaro: #48D6ED;
+ --azuloscuro: #337AB7;
+ --azulnegro: #303342;
+ --negro: #333333;
+ --negro2: #000;
+ --gris: #B2B3B3;
+ --fondo: #FFFEFC;
+ --verdeazul: #157A8A;
+ --Magenta: #9C2759;
+ --blanco: #fff;
+ --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+ --blanconegro: linear-gradient(rgba(0, 0, 0, 0.842) 40%, white 0%);
+ --negroblanco: linear-gradient(white 30%, rgba(72, 72, 252, 0.582) 0%);
+
+}
+*{
+ margin:0;
+}
+
+body{
+  font-family: 'Roboto' , sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: 'Marcellus', serif;
+}
+
+@media screen and (min-width:320px) and (max-width:1024px) {
+#Inicio-sesion{
+  background-image: url(./cama.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  color: var(--blanco);
+  justify-content: center;
+ 
+}
+
+#formulario{
+  background-image: url(./login_blanco.png);
+  background-color: rgba(74, 125, 169, 0.836);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  margin-top:10% ;
+  border-radius: 3px;
+  width: 50%;
+
+  height: auto;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  border: 0px;
+  margin-top: 1.5rem;
+  width: 100%;
+  height: auto;
+ 
+}
+
+.img-formulario{
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  align-items: flex-start;
+  margin: -13.7%;
+}
+
+#img-formulario{
+  width: 100%;
+  height: 50%;  
+  margin: 10px;
+  margin-right: 55%;
+}
+
+.user-formulario{
+  display: flex;
+  color: rgba(156, 39, 89);
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 50px;
+}
+
+.formu{
+  width: 100%;
+  height: 20px;
+}
+
+.boton-formu{
+  width: 102.5%;
+  height: 25px;
+  background-color: var(--negro2);
+  color: var(--blanco);
+  border-radius: 3px;
+  font-size: 1em;
+}
+
+.registrar-formu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
+  margin: 0.5rem;
+}
+
+.registrate{
+  display: flex;
+  align-content: center;
+  padding: 0.5rem;
+  color: var(--blanco);
+  font-size: 1em;
+}
+
+.aqui{
+  display: flex;
+  color: var(--negro2);
+}
+
+
+
+}
+
+@media screen and (min-width: 1024px){
+
+    #Inicio-sesion{
+        background-image: url(./cama.jpg);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        color: var(--blanco);
+        justify-content: center;
+       
+      }
+      
+      #formulario{
+        background-image: url(./login_blanco.png);
+        background-color: rgba(74, 125, 169, 0.836);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        margin-top:10% ;
+        border-radius: 3px;
+      }
+      
+      
+      .formulario{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        border: 0px;
+        margin-top: 1.5rem;
+        width: 100%;
+        height: auto;
+       
+      }
+      
+      .img-formulario{
+        display: flex;
+        flex-direction: row;
+        align-content: space-around;
+        align-items: flex-start;
+        margin: -13.7%;
+      }
+      
+      #img-formulario{
+        width: 100%;
+        height: 50%;  
+        margin: 10px;
+        margin-right: 55%;
+      }
+      
+      .user-formulario{
+        display: flex;
+        color: rgba(156, 39, 89);
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        padding: 1rem;
+        font-size: 50px;
+      }
+      
+      .formu{
+        width: 100%;
+        height: 20px;
+      }
+      
+      .boton-formu{
+        width: 102.5%;
+        height: 25px;
+        background-color: var(--negro2);
+        color: var(--blanco);
+        border-radius: 3px;
+        font-size: 1em;
+      }
+      
+      .registrar-formu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        align-content: space-between;
+        margin: 0.5rem;
+      }
+      
+      .registrate{
+        display: flex;
+        align-content: center;
+        padding: 0.5rem;
+        color: var(--blanco);
+        font-size: 1em;
+      }
+      
+      .aqui{
+        display: flex;
+        color: var(--negro2);
+      }
+}
